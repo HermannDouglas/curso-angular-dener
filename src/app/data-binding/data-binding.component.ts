@@ -11,7 +11,7 @@ export class DataBindingComponent implements OnInit {
   public idade: number = 29; 
   public maisUm: number = 1;
 
-  public checkedDisabled: boolean = true;
+  public checkedDisabled: boolean = true; 
   public imgSrc: string = "https://vidafullstack.com.br/wp-content/uploads/2021/12/banner.jpg";
 
   constructor() { }
