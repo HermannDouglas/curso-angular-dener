@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./diretivas-estruturais.component.scss']
 })
 export class DiretivasEstruturaisComponent implements OnInit {
-
+  
   public condition: boolean = true;
+  public conditionClick: boolean = true;
 
   constructor() { }
 
