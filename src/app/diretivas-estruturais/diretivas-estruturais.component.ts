@@ -24,4 +24,12 @@ export class DiretivasEstruturaisComponent implements OnInit {
 
   }
 
+  public onClick() {
+    if (this.conditionClick) {
+      this.conditionClick = false;
+    } else {
+      this.conditionClick = true;
+    }
+  }
+
 }
