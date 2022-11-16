@@ -10,6 +10,12 @@ export class DiretivasEstruturaisComponent implements OnInit {
   public condition: boolean = true;
   public conditionClick: boolean = true;
 
+  public list: Array<{ nome: string, idade: number}> = [
+    { nome: "Hermann Douglas", idade: 29 },
+    { nome: "Peter Parker", idade: 30 },
+    { nome: "Nathan Drake", idade: 35}
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
@@ -30,6 +36,10 @@ export class DiretivasEstruturaisComponent implements OnInit {
     } else {
       this.conditionClick = true;
     }
+  }
+
+  public onClickAddList() {
+    this.list.push({ nome: "Mary Jane", idade: 25 });
   }
 
 }

@@ -15,6 +15,9 @@
 <p  *ngIf="!conditionClick">
     False
 </p>
-
-
 <button (click)="onClick()">Clicar</button> 
+
+<ul>
+    <li *ngFor="let item of list">{{ item.nome }} - idade = {{ item.idade }}</li>
+</ul>
+<button (click)="onClickAddList()">Add</button> 
