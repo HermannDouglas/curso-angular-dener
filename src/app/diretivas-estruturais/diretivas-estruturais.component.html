@@ -19,7 +19,22 @@
 
 <ul>
     <li *ngFor="let item of list; let i = index;" (click)="onClickEventList(i)">
-        [{{i+1}}] - {{ item.nome }} - idade = {{ item.idade }}
+        [{{ i + 1 }}] - {{ item.nome }} - idade = {{ item.idade }} 
     </li>
 </ul>
 <button (click)="onClickAddList()">Add</button> 
+
+<hr>
+
+<input type="text" [(ngModel)]="nome">
+<div [ngSwitch]="nome">
+    <p *ngSwitchCase="'Hermann'">
+        Hermann
+    </p>
+    <p *ngSwitchCase="'Douglas'">
+        Douglas
+    </p>
+    <p *ngSwitchDefault>
+        Deu ruim sua busca!
+    </p>
+</div>
