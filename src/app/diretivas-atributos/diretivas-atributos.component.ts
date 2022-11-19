@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiretivasAtributosComponent implements OnInit {
 
+  public valor: boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {
+    
+    setInterval( () => {
+      if (this.valor) {
+        this.valor = false;
+      } else {
+        this.valor = true;
+      }
+    }, 2000);
+
   }
 
 }
