@@ -3,7 +3,16 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
 @Component({
   selector: 'app-root',
   template: `
-    <app-diretivas-atributos></app-diretivas-atributos>
+    <app-diretivas-atributos>
+      <h1>Aulas de Diretivas Atributo</h1>
+      <h3>Final da aula</h3>
+    </app-diretivas-atributos>
+    
+    <app-diretivas-atributos>
+      <h1>Hall Jordan</h1>
+      <h3>Hank Pym</h3>
+    </app-diretivas-atributos>
+
     <!-- <app-diretivas-estruturais></app-diretivas-estruturais> -->
     <app-data-binding></app-data-binding>
     <router-outlet></router-outlet>
