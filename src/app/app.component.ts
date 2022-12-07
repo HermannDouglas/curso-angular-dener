@@ -3,6 +3,10 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
 @Component({
   selector: 'app-root',
   template: `
+  <app-input [contador]="addValue"></app-input>
+  <br/>
+  <button (click)="add()">Add</button>
+  <hr>
   <app-new-component></app-new-component>
   <hr>
   <app-diretivas-atributos></app-diretivas-atributos>
@@ -24,8 +28,13 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
 })
 export class AppComponent implements OnInit { 
   
+  public addValue: number = 10;
+
   constructor() {}
 
+  public add() {
+    this.addValue += 1;
+  }
 
   ngOnInit(): void {
   }
