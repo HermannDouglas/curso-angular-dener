@@ -3,6 +3,8 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
 @Component({
   selector: 'app-root',
   template: `
+  <app-output></app-output>
+  <hr>
   <app-input [contador]="addValue"></app-input>
   <br/>
   <button (click)="add()">Add</button>
